@@ -1,10 +1,36 @@
-body{
-    height:100%;
-    width:100%;
-}
-
-header{
-    width:100%;
-    background-color:royalblue;
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  header {
+    height:50px;
+    width: 100%;
+    background-color: royalblue;
     color: white;
-}
+    margin: 0;
+  }
+  
+  main {
+    height: 100%; /* Take up the full height of the viewport */
+    width: 100%; /* Take up the full width of the viewport */
+    padding: 20px; /* Add padding as needed */
+  }
+  
+  .button {
+    height: 20px;
+    width: 80px;
+    outline: none; /* Remove the default button outline */
+    background-color: royalblue; /* Set button background color */
+    color: white; /* Set button text color */
+    padding: 10px 20px; /* Add padding as needed */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Add rounded corners */
+    cursor: pointer;
+  }
+  
+  /* Additional styles as needed */
+  

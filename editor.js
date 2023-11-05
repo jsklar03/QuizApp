@@ -17,14 +17,14 @@ btnStartNewNote.addEventListener('click', () => {
 // When the "X" is clicked in the note editor, we remove the 'edit-mode' class
 // from the note editor panel. The panel will then return to its default
 // position, off-screen.
-const btnCancelNote = document.querySelector('#note-editor .icon-cancel');
-btnCancelNote.addEventListener('click', () => {
-  noteEditorPanel.classList.remove('edit-mode');
-});
+// const btnCancelNote = document.querySelector('#note-editor .icon-cancel');
+// btnCancelNote.addEventListener('click', () => {
+//   noteEditorPanel.classList.remove('edit-mode');
+// });
 
 // When the check-mark is clicked in the note editor, we close the editor panel
 // and call the submitNote() function, which will add a new note.
-const btnSubmitNote = document.querySelector('#note-editor .icon-done');
+const btnSubmitNote = document.querySelector('#Add');
 btnSubmitNote.addEventListener('click', () => {
   noteEditorPanel.classList.remove('edit-mode');
   submitNote();
@@ -32,10 +32,10 @@ btnSubmitNote.addEventListener('click', () => {
 
 // When the animal image in the note editor is clicked, we change the animal
 // to the next animal in a predefined sequence (see below).
-const editorImageElement = document.querySelector('#note-editor-image');
-editorImageElement.addEventListener('click', () => {
-  updateEditorImage();
-});
+// const editorImageElement = document.querySelector('#note-editor-image');
+// editorImageElement.addEventListener('click', () => {
+//   updateEditorImage();
+// });
 
 // Create a pre-defined sequence of animal images to iterate through. These
 // animals serve as thumbnail images for the notecards.

@@ -91,10 +91,10 @@ class Notecard {
     const noteEditorBody = document.querySelector('#note-editor-body');
     const editorBodyText = noteEditorBody.value;
   
-    const noteEditorImage = document.querySelector('#note-editor-image');
-    const editorImageURL = noteEditorImage.src;
+    // const noteEditorImage = document.querySelector('#note-editor-image');
+    // const editorImageURL = noteEditorImage.src;
   
-    const notecard = addNewNote(editorImageURL, editorTitleText, editorBodyText);
+    const notecard = addNewNote(editorTitleText, editorBodyText);
     createElement(notecard);
   
     saveToLocalStorage();
