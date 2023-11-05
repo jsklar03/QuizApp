@@ -1,44 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- D3.js -->
-    <script src = 'index.js' defer></script>
-    <link rel="stylesheet" href="style.css">
+
+<html>
+
+  <head>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
     <title>QuizApp</title>
-</head>
-<body>
-    <header>
-        <div class="logo">QuizApp</div>
-        <nav class = "navbar">
-            <div class = "quizzes">Quizzes</div>
-        </nav>
-    </header>
-    <main>
-        <div class = "main_flex">
-            <!-- <div class = "sub_flexbox"> -->
-                <div class = "new_quiz_box">
-                    <div class = "new_quiz_card">
-                        <p id = "new_quiz_plus">+</p>
-                        <p id = "new_quiz_text">New Quiz!</p>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="js/index.js" type="text/javascript"></script>
+    <script defer src="js/editor.js" type="text/javascript"></script>
+
+  </head>
+
+
+  <body>
+
+      <header>
+        <h1>QuizApp</h1>
+      </header>
+
+      <div id="container">
+      <div id="notecard-list">
+
+        <template id="notecard-template">
+
+          <div class="notecard expanded">
+            
+            <div class="notecard-left">
+              
+              <div class="notecard-main-content">
+                <div class="notecard-text">
+                  <div class="note-title-container">
+                    <div class="note-title">
+                      Placeholder Title
                     </div>
+                  </div>
+                  <div class="note-body">
+                    Here is some placeholder body text.
+                  </div>
                 </div>
-            <!-- </div> -->
-            <div id="quiz_bank">
-                <p>Quizzes</p>
-                <div>
-                    <div>
-                        <ul id="symbol-list">
-                        </ul>
-                    </div>
+              </div>
+
+              <div class="notecard-footer">
+                Aug 8 2022, 11:09
+              </div>
+
+            </div> <!-- END notecard-left -->
+
+
+            <div class="notecard-right">
+
+              <div class="icon icon-expand material-symbols-outlined">
+                expand_more
+              </div>
+              <div class="icon icon-collapse material-symbols-outlined">
+                expand_less
+              </div>
+
+              <div class="toolbar">
+                <div class="material-symbols-outlined icon icon-edit">
+                  edit
                 </div>
-            </div>
-            <!-- Close of main flexbox -->
+                <div class="material-symbols-outlined icon icon-delete">
+                  delete
+                </div>
+              </div>
+            </div> <!-- END notecard-right -->
+
+
+          </div> <!-- END notecard -->
+
+        </template> <!-- END notecard template -->
+
+
+      </div> <!-- END notecard-list -->
+
+
+      <div id="note-editor" class="">
+        
+        <div id="btn-new-note">
         </div>
-    </main>
-    <footer>
-        <p>&copy; 2023 QuizApp</p>
-    </footer>
-</body>
+
+        <div class="note-editor-contents">
+
+          <div class="note-editor-left">
+
+            <div class="note-editor-img">
+              <!-- <img id="note-editor-image" src="assets/warhol-tiger.png"></img> -->
+            </div>
+
+            <form>
+              <input id="note-editor-title" placeholder="Title of Your Note..."
+                name="dummy" maxlength="50"></input>
+              <textarea id="note-editor-body" placeholder="Body of Your Note..."
+                rows="15" maxlength="1000"></textarea>
+            </form>
+
+          </div>
+
+          <div class="note-editor-right">
+            <div class="material-symbols-outlined icon icon-cancel">
+              close
+            </div>
+            <div class="material-symbols-outlined icon icon-done">
+              done
+            </div>
+          </div>
+
+        </div> <!-- END note-editor-contents -->
+
+      </div> <!-- END note-editor -->
+
+
+    </div> <!-- END container -->
+
+
+  </body>
 </html>
