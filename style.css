@@ -31,6 +31,15 @@ html, body {
     border-radius: 5px; /* Add rounded corners */
     cursor: pointer;
   }
+
+  .question_editor{
+    display: flex;
+    flex-direction: row;
+  }
+
+  #main_container{
+    margin: 0 auto;
+  }
   
   /* Additional styles as needed */
   

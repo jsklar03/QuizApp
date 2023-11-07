@@ -18,20 +18,21 @@
     </header>
 
     <main>
-      <div id="container">
-        <div id="notecard-list">
+      <div id="main_container">
+        <div id="quiz_list">
 
-            <template id="notecard-template">
+            <template id="question_template">
 
-            <div class="notecard expanded">
+            <div class="notecard_expanded">
             
-                <div class="notecard-left">
+                <div class="notecard_left">
               
-                <div class="notecard-main-content">
-                    <div class="notecard-text">
-                    <div class="note-title-container">
-                        <div class="note-title">
-                        Placeholder Title
+                <div class="notecard_main_content">
+                    <div class="notecard_text">
+                        Placeholder text
+                        <div class="note-title-container">
+                            <div class="note-title">
+                            Placeholder Title
                         </div>
                     </div>
                     <div class="note-body">
@@ -48,19 +49,19 @@
 
                 <div class="notecard-right">
 
-                <div class="icon icon-expand material-symbols-outlined">
+                <!-- <div class="icon icon-expand material-symbols-outlined">
                     expand_more
                 </div>
                 <div class="icon icon-collapse material-symbols-outlined">
                     expand_less
-                </div>
+                </div> -->
 
                 <div class="toolbar">
-                    <div class="button">
-                    edit
+                    <div class="button" id="edit">
+                    Edit
                     </div>
-                    <div class="button">
-                    delete
+                    <div class="button" id="delete">
+                    Delete
                     </div>
                 </div>
                 </div> <!-- END notecard-right -->
@@ -71,7 +72,7 @@
 
         </div> <!-- END notecard-list -->
 
-        <div id="note-editor" class="">
+        <div id="question-editor" class="">
         
             <div id="btn-new-note">
             </div>
@@ -80,10 +81,6 @@
 
             <div class="note-editor-left">
 
-                <div class="note-editor-img">
-                <!-- <img id="note-editor-image" src="assets/warhol-tiger.png"></img> -->
-                </div>
-
                 <form>
                     <input id="note-editor-title" placeholder="Title of Your Note..."
                         name="dummy" maxlength="50"></input>
@@ -91,9 +88,9 @@
                         rows="15" maxlength="1000"></textarea>
                 </form>
             </div>
-            <div class="note-editor-right">
+            <div class="btn_new_question">
                 <div class="button" id="close">
-                    close
+                    Close
                 </div>
                 <div class="button" id="Add">
                     Add
